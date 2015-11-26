@@ -82,12 +82,12 @@ CFPApp::Application.configure do
   config.action_mailer.default_options = {from: ENV['MAIL_FROM']}
 
   config.action_mailer.smtp_settings = {
-    :address        => 'smtp.sendgrid.net',
-    :port           => '587',
+    :address        => ENV['EMAIL_PROVIDER_URL'],
+    :port           => ENV['EMAIL_PORT'],
     :authentication => :plain,
-    :user_name      => ENV['SENDGRID_USERNAME'],
-    :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'heroku.com',
+    :user_name      => ENV['EMAIL_EMAIL'],
+    :password       => ENV['EMAIL_PASSWORD'],
+    :domain         => ENV['MAIL_HOST'],
     :enable_starttls_auto => true
   }
 
