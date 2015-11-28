@@ -85,7 +85,7 @@ class Person < ActiveRecord::Base
   end
 
   def demographics_complete?
-    gender.present? && ethnicity.present? && country.present?
+    country.present?
   end
 
   def organizer?
