@@ -143,12 +143,12 @@ h3.tags {
 }
 
 .icon-twitter {
-  background-image: url(twitter_32.png);
+  background-image: image-url('twitter_32.png');
   @include icon-generic;
 }
 
 .icon-github {
-  background-image: url(github_32.png);
+  background-image: image-url('github_32.png');
   @include icon-generic;
 }
 
