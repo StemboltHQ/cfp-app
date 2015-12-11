@@ -87,7 +87,7 @@ CFPApp::Application.configure do
     :authentication => :plain,
     :user_name      => ENV['EMAIL_EMAIL'],
     :password       => ENV['EMAIL_PASSWORD'],
-    :domain         => ENV['MAIL_HOST'],
+    :domain         => ENV['MAIL_DOMAIN'],
     :enable_starttls_auto => true
   }
 
