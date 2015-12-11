@@ -27,6 +27,8 @@ gem 'active_model_serializers', '~> 0.8.1'
 gem 'draper'
 gem 'simple_form', '3.1.0.rc1'
 
+gem "figaro"
+
 gem 'zeroclipboard-rails'
 
 group :production do
